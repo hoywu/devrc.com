@@ -1,0 +1,17 @@
+@import './base.css';
+@import './animate.css';
+
+:root {
+  --icon-color: #333333;
+  --page-width: 1200px;
+  --header-height: 50px;
+  --header-logo-size: 40px;
+}
+
+:root.dark {
+  --icon-color: #ffffff;
+}
+
+#app {
+  margin: 0 auto;
+}

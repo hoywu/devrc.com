@@ -1,0 +1,5 @@
+.backOutUp-leave-active {
+  /* position: absolute; */
+  animation: backOutUp;
+  animation-duration: 0.5s;
+}
