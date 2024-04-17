@@ -7,7 +7,11 @@
   </header>
 
   <main>
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <Transition mode="out-in" name="homeNav">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
   </main>
 
   <footer>
