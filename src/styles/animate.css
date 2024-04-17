@@ -1,5 +1,4 @@
-.backOutUp-leave-active {
-  /* position: absolute; */
+.homeNav-leave-active {
   animation: backOutUp;
   animation-duration: 0.5s;
 }

@@ -12,18 +12,12 @@ import Logo from '@/assets/Logo.vue';
 
 <style scoped>
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply flex items-center justify-center;
 }
 
 .site-header .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  @apply flex items-center justify-between w-full px-5;
   max-width: var(--page-width);
-  padding: 0 20px;
   height: var(--header-height);
   border-bottom: 1px solid #ccc;
 }

@@ -3,7 +3,7 @@
 
 :root {
   --icon-color: #333333;
-  --page-width: 1200px;
+  --page-width: 100%;
   --header-height: 50px;
   --header-logo-size: 40px;
 }
