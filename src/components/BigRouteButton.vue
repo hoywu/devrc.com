@@ -9,7 +9,7 @@ const props = defineProps<{
 <template>
   <RouterLink :to="{ name: to }">
     <div class="route-button">
-      <div class="shrink-0">
+      <div class="shrink-0 h-12 w-12">
         <SvgIcon class="h-12 w-12" :name="props.to" />
       </div>
       <div>
