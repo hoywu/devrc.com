@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import Logo from '@/assets/Logo.vue';
+
+const router = useRouter();
+
+function clickLogo() {
+  router.push({ name: 'home' });
+}
 </script>
 
 <template>
   <div class="site-header">
     <div class="content">
-      <Logo class="logo" />
+      <Logo class="logo cursor-pointer" @click="clickLogo" />
     </div>
   </div>
 </template>
