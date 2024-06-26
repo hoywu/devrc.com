@@ -12,7 +12,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 
-// https://cn.vitejs.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig((configEnv) => {
   const env = loadEnv(configEnv.mode, process.cwd());
   return {
@@ -24,17 +24,13 @@ export default defineConfig((configEnv) => {
       AutoImport({
         dts: './types/auto-imports.d.ts',
         imports: [
-          "vue",
-          "vue-router",
+          'vue',
+          'vue-router',
           {
-            'axios': [
-              ['default', 'axios'],
-            ],
+            axios: [['default', 'axios']],
           },
         ],
-        resolvers: [
-          ElementPlusResolver(),
-        ],
+        resolvers: [ElementPlusResolver()],
         defaultExportByFilename: false,
         vueTemplate: true,
       }),
@@ -47,15 +43,11 @@ export default defineConfig((configEnv) => {
             prefix: 'icon',
           }),
         ],
-        dirs: [
-          './src/components',
-          './src/components/**',
-        ],
+        dirs: ['./src/components', './src/components/**', './src/assets', './src/assets/**'],
       }),
 
       Icons(),
     ],
-
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),

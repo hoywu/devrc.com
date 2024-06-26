@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Logo from '@/assets/Logo.vue';
-
 const router = useRouter();
 
 function clickLogo() {
@@ -11,7 +9,7 @@ function clickLogo() {
 <template>
   <div class="site-header">
     <div class="content">
-      <Logo class="logo cursor-pointer" @click="clickLogo" />
+      <SiteLogo class="logo" @click="clickLogo" />
     </div>
   </div>
 </template>
@@ -29,6 +27,7 @@ function clickLogo() {
 }
 
 .site-header .logo {
+  @apply cursor-pointer;
   height: var(--header-logo-size);
   width: var(--header-logo-size);
 }
